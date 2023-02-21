@@ -1,0 +1,99 @@
+.promo {
+    background: url(../img/bg/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(100% + 130px);
+    padding-top: 20px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 450px 700px;
+    }
+    &__title {
+        display: block;
+        margin-top: 15px;
+
+        font-family: 'RussoOne', sans-serif;
+        font-size: 64px;
+        font-weight: 400;
+        color: $main-color;
+    }
+    &__subtitle {
+        display: block;
+        width: 300px;
+        position: relative;
+
+        font-family: 'RussoOne', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #F1F1F1;
+        &::after {
+            content: url(../img/icons/arrow-header.svg);
+            position: absolute;
+            top: 0;
+            right: -110px;
+            transform: rotate(5deg);
+        }
+    }
+    &__button {
+        display: flex;
+        width: 395px;
+        height: 87px;
+        padding: 20px 60px 20px 60px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+    
+        background: linear-gradient(to top,#2194FF, #81C0FB 100%, #2194FF 100%);
+        border-radius: 11px;
+        cursor: pointer;
+
+        font-family: 'RussoOne', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: #F1F1F1;
+        text-align: center;
+    }
+    &__descr {
+        display: grid;
+        grid-template-columns: 201px 293px;
+        grid-template-rows: auto;
+        column-gap: 35px;
+        align-items: center;
+        margin-top: 35px;
+        &--day {
+            &-block {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                img {
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &--weather {
+            &-block {
+                display: flex;
+                align-items: center;
+                margin-bottom: 11px;
+                img {
+                    display: block;
+                    margin-right: 10px;
+                    &:nth-child(3) {
+                        display: block;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+        &--text {
+            color: #F1F1F1;
+        }
+        &--arrow {
+            transform: rotate(90deg);
+        }
+    }
+    &__img {
+
+    }
+}

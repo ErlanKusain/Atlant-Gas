@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -19,36 +19,45 @@ body {
 @import 'base/mixin';
 @import 'base/variables';
 @import 'blocks/header';
+@import 'blocks/promo';
 
 a {
     text-decoration: none;
 }
 
 .button-big {
-    display: block;
+    display: flex;
     width: 295px;
     height: 87px;
+
+    justify-content: center;
+    align-items: center;
+
     background: linear-gradient(#2194FF,#81C0FB,#0079C2);
     border-radius: 11px;
 }
 
 .button-small {
-    display: block;
+    display: flex;
     width: 155px;
     height: 43px;
+
+    justify-content: center;
+    align-items: center;
+
     background: $main-color;
     border-radius: 50px;
 }
 
 .title {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'RussoOne', sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 43px;
 }
 
 .descr {
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'OpenSans',sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
