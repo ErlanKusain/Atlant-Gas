@@ -1,0 +1,80 @@
+.price {
+    margin-top: 100px;
+    &__title {
+        color: $main-color;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 50px;
+        
+        font-family: 'RussoOne', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #f1f1f16b;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 260px 542px 260px;
+        grid-template-rows: auto;
+        column-gap: 15px;
+        justify-content: center;
+    }
+    &__inner {
+        &--title {
+            color: #F1F1F1;
+        }
+        &--subtitle {
+            display: block;
+            margin-bottom: 21px;
+
+            font-family: 'RussoOne', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: $main-color;
+        }
+        &--descr {
+            display: block;
+            margin-bottom: 25px;
+
+            color: #F1F1F1;
+        }
+        &--img {
+            display: block;
+            margin-top: 15px;
+        }
+        &--button {
+            margin-top: 50px;
+
+            font-family: 'OpenSans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #f1f1f1;
+        }
+    }
+    &__ratio {
+        display: grid;
+        grid-template-columns: 80px 35px 80px; 
+        grid-template-rows: auto;
+        justify-content: center;
+        margin-top: 10px;
+        &--procent {
+            color: #f1f1f16b;
+        }
+        &--text {
+            font-family: 'RussoOne', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #f1f1f16b;
+            line-height: 15px;
+        }   
+        &--divider {
+            display: block;
+            margin-top: 20px;
+            width: 33px;
+            height: 1px;
+            background-color: #f1f1f14c;
+            transform: rotate(90deg);
+        }
+    }
+}
