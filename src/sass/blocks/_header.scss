@@ -1,0 +1,51 @@
+.header {
+    padding-top: 10px;
+    .headerline {
+        display: flex;
+        justify-content: space-between;
+        &__block {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            &--logo {
+                
+            }
+            &--divider {
+                display: block;
+                margin-top: 20px;
+                width: 33px;
+                height: 1px;
+                background-color: #ffffff;
+                transform: rotate(90deg);
+            }
+            &--text {
+                display: block;
+                margin-top: 20px;
+                width: 190px;
+
+                font-family: 'OpenSans', sans-serif;
+                font-size: 14;
+                font-weight: 400;
+                line-height: 18px;
+                color: $main-color;
+            }
+        }
+        &__phone {
+            margin-top: 40px;
+            &--number {
+                font-family: 'RussoOne', sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                a {
+                    color: #f1f1f1;
+                }
+            }
+            &--text {
+                a {
+                    text-decoration: underline;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

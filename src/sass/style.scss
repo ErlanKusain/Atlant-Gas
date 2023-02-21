@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'RussoOne', sans-serif;
+    font-family: 'OpenSans', sans-serif;
+    background: #222222;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'base/font';
+@import 'base/mixin';
+@import 'base/variables';
+@import 'blocks/header';
+
+a {
+    text-decoration: none;
+}
+
+.button-big {
+    display: block;
+    width: 295px;
+    height: 87px;
+    background: linear-gradient(#2194FF,#81C0FB,#0079C2);
+    border-radius: 11px;
+}
+
+.button-small {
+    display: block;
+    width: 155px;
+    height: 43px;
+    background: $main-color;
+    border-radius: 50px;
+}
+
+.title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+.descr {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
