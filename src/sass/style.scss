@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
 }
 
+
 @import 'base/font';
 @import 'base/mixin';
 @import 'base/variables';
@@ -22,6 +23,7 @@ body {
 @import 'blocks/promo';
 @import 'blocks/price';
 @import 'blocks/advantages';
+@import 'blocks/volume';
 
 a {
     text-decoration: none;
