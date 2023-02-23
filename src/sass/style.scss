@@ -19,11 +19,13 @@ body {
 @import 'base/font';
 @import 'base/mixin';
 @import 'base/variables';
+@import 'base/slick';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/price';
 @import 'blocks/advantages';
 @import 'blocks/volume';
+@import 'blocks/reviews';
 
 a {
     text-decoration: none;

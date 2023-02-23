@@ -1,0 +1,111 @@
+.reviews {
+    min-height: 535px;
+    padding: 40px 0;
+    &__title {
+        color: #F1F1F1;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        height: 370px;
+        margin-top: 50px;
+    }
+    &__bg-first {
+        display: block;
+        margin: 0 auto;
+
+        width: 850px;
+        height: 252px;
+        border-radius: 40px;
+        background-color: #F1F1F1;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+        z-index: 1;
+    }
+    &__bg-second {
+        display: block;
+        margin: 0 auto;
+
+        width: 810px;
+        height: 286px;
+        border-radius: 40px;
+        background-color: #F1F1F1;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        
+        transform: translateY(-5%);
+        z-index: 2;
+    }
+    &__slider-page {
+        display: grid;
+        grid-template-columns: 201px 450px;
+        justify-content: center;
+        column-gap: 25px;
+
+        margin: 0 auto;
+        padding: 40px 50px 40px 40px;
+        
+        width: 760px;
+        height: 320px;
+        border-radius: 40px;
+        background-color: #F1F1F1;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+        transform: translateY(-5%);
+        z-index: 3;
+    
+    }
+    &__text {
+         font-family: 'RussoOne', sans-serif;
+        &--name {
+            display: block;
+            margin-top: 10px;
+
+            font-size: 24px;
+            font-weight: 400;
+            color: $main-color;
+        }
+        &--city {
+            display: block;
+            margin-top: 10px;
+
+            font-size: 18px;
+            font-weight: 400;
+            color: #2D2D2D;
+        }
+        &--descr {
+            display: block;
+            margin-top: 10px;
+
+            font-family: 'OpenSans', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            color: #2D2D2D;         
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        top: 140px;
+        left: 70px;
+
+        display: block;
+        width: 70px;
+        height: 70px;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .slick-next {
+        position: absolute;
+        top: 140px;
+        right: 70px;
+
+        display: block;
+        width: 70px;
+        height: 70px;
+        
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
