@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ body {
 @import 'blocks/advantages';
 @import 'blocks/volume';
 @import 'blocks/reviews';
+@import 'blocks/questions';
 
 a {
     text-decoration: none;
