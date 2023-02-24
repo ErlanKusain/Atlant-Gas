@@ -1,0 +1,110 @@
+.specialist {
+    padding-top: 55px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 565px 365px;
+        column-gap: 45px;
+
+    }
+    &__title {
+        margin: 20px 0 50px 0;
+        color: #F1F1F1;
+    }
+    &__form {
+        input {
+            display: block;
+            margin-bottom: 24px;
+
+            width: 402px;
+            height: 51px;
+            padding: 17px 22px 17px 20px;
+
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #2d2d2d6f;
+
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+        textarea {
+            width: 402px;
+            height: 112px;
+            padding: 17px 22px 17px 20px;
+
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #2d2d2d6f;
+
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+        &--button {
+            margin-top: 25px;
+            width: 220px;
+            height: 47px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'OpenSans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #F1F1F1;
+
+            border-radius: 50px;
+            border: none;
+            background-color: $main-color;
+        }
+    }
+    &__img {
+        position: relative;
+        &--descr {
+            position: absolute;
+            bottom: 100px;
+            left: -30px;
+
+            display: block;
+            width: 209px;
+            height: 83px;
+            padding: 15px 20px 19px 25px;
+
+            background-color: $main-color;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+        &--title {
+            font-family: 'RussoOne', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: #F1F1F1;
+        }
+        &--subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color:#F1F1F1;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6,166px);
+        grid-template-rows: 1,66px;
+        column-gap: 15px;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 166px;
+        height: 66px;
+        background-color: #F1F1F1;
+        border-radius: 20px;
+    }
+}
