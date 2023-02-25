@@ -28,6 +28,7 @@ body {
 @import 'blocks/reviews';
 @import 'blocks/questions';
 @import 'blocks/specialist';
+@import 'blocks/modal';
 
 a {
     text-decoration: none;
@@ -41,7 +42,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(#2194FF,#81C0FB,#0079C2);
+    background: $main-color;
     border-radius: 11px;
     cursor: pointer;
 }

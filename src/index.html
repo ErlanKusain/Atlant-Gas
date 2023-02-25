@@ -51,7 +51,7 @@
                  <div class="promo__text">
                     <h1 class="promo__title">Доставим газ за 4 часа</h1>
                     <h2 class="promo__subtitle">в любую точку  Москвы и Московской области</h2>
-                    <div class="promo__button">Заказать доставку газа в газгольдер</div>
+                    <div data-modal="consultation" class="promo__button">Заказать доставку газа в газгольдер</div>
                 </div>
                 </div>
                 <div class="promo__img">
@@ -70,7 +70,7 @@
                     <h3 class="price__inner--title title">Пропан</h3>
                     <h4 class="price__inner--subtitle">от 25 рублей за литр</h4>
                     <p class="price__inner--descr descr">Физически испарение происходит до -40 градусов, что позволяет использовать его в наших с вами погодных условиях</p>
-                    <div class="price__inner--button button-small">Заказать</div>
+                    <div data-modal="consultation" class="price__inner--button button-small">Заказать</div>
                 </div>
                 <div class="price__inner">
                     <div class="price__ratio">
@@ -90,7 +90,7 @@
                     <h3 class="price__inner--title title">Бутан</h3>
                     <h4 class="price__inner--subtitle">от 16 рублей за литр</h4>
                     <p class="price__inner--descr descr">Испарение Бутана происходит только до 0 градусов и годится для использования в тёплое время года</p>
-                    <div class="price__inner--button button-small">Заказать</div>
+                    <div data-modal="consultation" class="price__inner--button button-small">Заказать</div>
                 </div>
             </div>
             <div class="price__arrow"><img src="img/icons/arrow-big.svg" alt=""></div>
@@ -179,22 +179,22 @@
 
             <div class="volume__content volume__content_active">
                 <div class="volume__img"><img src="img/icons/volume-transport.png" alt=""></div>
-                <div class="volume__button">Заказать газ</div>
+                <div data-modal="consultation" class="volume__button">Заказать газ</div>
             </div>
 
             <div class="volume__content">
                 <div class="volume__img"><img src="img/icons/volume-transport-2.png" alt=""></div>
-                <div class="volume__button">Заказать газ</div>
+                <div data-modal="consultation" class="volume__button">Заказать газ</div>
             </div>
 
             <div class="volume__content">
                 <div class="volume__img"><img src="img/icons/volume-truck.png" alt=""></div>
-                <div class="volume__button">Заказать газ</div>
+                <div data-modal="consultation" class="volume__button">Заказать газ</div>
             </div>
             
             <div class="volume__content">
                 <div class="volume__img"><img src="img/icons/volume-truck-2.png" alt=""></div>
-                <div class="volume__button">Заказать газ</div>
+                <div data-modal="consultation" class="volume__button">Заказать газ</div>
             </div>
         </div>
     </section>
@@ -332,8 +332,28 @@
                 <div class="specialist__item"><img src="img/icons/lukoil.svg" alt=""></div>
                 <div class="specialist__item"><img src="img/icons/tatneft.svg" alt=""></div>
             </div>
+            <h2 class="specialist__order-title title">Закажи прямо сейчас и получи <br> бесплатную установку телеметрии</h2>
+            <div data-modal="consultation" class="specialist__order-button">Заказать газ</div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__descr">
+                <h2 class="modal__title">Доставим газ за 4 часа</h2>
+                <div class="modal__close"><img src="img/icons/modal-close.svg" alt="close"></div>
+            </div>
+            <form class="modal__form" id="consultation-form" action="#">
+                <div class="modal__form--input">
+                    <input required name="name" placeholder="ИМЯ" type="text">
+                </div>
+                <div class="modal__form--input">
+                    <input required name="name" placeholder="ТЕЛЕФОН" type="number">
+                </div>
+                <button class="modal__form--button">Заказать доставку газа</button>
+            </form>
+        </div>
+    </div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

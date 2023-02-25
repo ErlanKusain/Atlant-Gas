@@ -107,4 +107,30 @@
         background-color: #F1F1F1;
         border-radius: 20px;
     }
+    &__order-title {
+        margin-top: 35px;
+
+        color: $main-color;
+        text-align: center;
+    }
+    &__order-button {
+        display: flex;
+        width: 291px;
+        height: 84px;
+        margin: 0 auto;
+        margin-top: 15px;
+
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'RussoOne',sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #f1f1f1;
+
+        background-color: #2194ff;
+        border: 4px solid #2194ff;
+        border-radius: 11px;
+        cursor: pointer;
+    }
 }

@@ -13,5 +13,16 @@ $(document).ready(function(){
           .addClass('volume__tab_active').siblings().removeClass('volume__tab_active')
           .closest('div.container').find('div.volume__content').removeClass('volume__content_active').eq($(this).index()).addClass('volume__content_active');
     });
+
+    $('[data-modal=consultation]').on('click', function() {
+      $('.overlay, #consultation').fadeIn('slow');
+  
+    });
+    });
+  
+    $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #thanks').fadeOut('slow');
+
+    
 });
 
