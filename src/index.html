@@ -309,7 +309,7 @@
                         <input required name="name" placeholder="ИМЯ" type="text">
                     </div>
                     <div class="specialist__form--input">
-                        <input required name="name" placeholder="ТЕЛЕФОН" type="number">
+                        <input required name="phone" placeholder="ТЕЛЕФОН" type="tel">
                     </div>
                     <div class="specialist__form--textarea">
                         <textarea required name="name" placeholder="ВАШ ВОПРОС" type="text"></textarea>
@@ -348,10 +348,15 @@
                     <input required name="name" placeholder="ИМЯ" type="text">
                 </div>
                 <div class="modal__form--input">
-                    <input required name="name" placeholder="ТЕЛЕФОН" type="number">
+                    <input required name="phone" placeholder="ТЕЛЕФОН" type="tel">
                 </div>
                 <button class="modal__form--button">Заказать доставку газа</button>
             </form>
+        </div>
+        <div class="modal__mini" id="thanks">
+            <h3 class="modal__mini--title">Спасибо за обращение</h3>
+            <h4 class="modal__mini--subtitle"> наш специалист свяжется с вами в ближайшее время</h4>
+            <button class="modal__mini--button modal__close">Вернуться на сайт</button>
         </div>
     </div>
 
@@ -380,6 +385,8 @@
     
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
