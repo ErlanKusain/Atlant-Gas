@@ -60,6 +60,15 @@
             border: none;
             background-color: $main-color;
         }
+        .error {
+            border: solid 2px red;
+        }
+        label.error {
+            font-family: 'RussoOne', sans-serif;
+            border: none;
+            color: red;
+            text-align: center;
+        }
     }
     &__img {
         position: relative;

@@ -1,0 +1,146 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__block {
+            &--text {
+
+            }
+        }
+    }
+    .promo {
+        &__descr {
+            &--text {
+                width: 120px;
+                
+                font-size: 12px;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 360px 700px;
+        }
+        &__title {
+            width: 300px;
+            
+            font-size: 45px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+
+            font-size: 20px;
+        }
+        &__button {
+            width: 330px;
+            height: 75px;
+
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container{
+        max-width: 500px;
+    } 
+    .header {
+        .headerline {
+            &__block {
+                &--text {
+                    display: none;
+                }
+            }
+            &__phone {
+                &--number {
+                    font-size: 18px;
+
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+    .promo {
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    } 
+    .header {
+        .headerline {
+            display: flex;
+            justify-content: space-around;
+            &__block {
+               &--logo {
+                display: block;
+                width: 150px;
+                img {
+                    width: 100%;
+                }
+               } 
+               &--divider {
+                display: none;
+               }
+            }
+            &__phone {
+                margin-top: 24px;
+                &--number {
+                    font-size: 15px;
+                    margin-top: 3px;
+                }
+                &--text {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .promo {
+        &__wrapper {
+            display: unset;
+        }
+        &__descr {
+            display: grid;
+            grid-template-columns: repeat(2,120px);
+            justify-content: center;
+            column-gap: 80px;
+        }
+        &__title {
+            margin: 0 auto;
+            margin-top: 30px;
+
+            text-align: center;
+        }
+        &__subtitle {
+            margin: 0 auto;
+            margin-top: 20px;
+
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
+        &__button {
+            margin: 0 auto;
+            margin-top: 80px;
+
+            width: 300px;
+            height: 70px;
+            
+            font-size: 17px;
+        }
+    }
+}

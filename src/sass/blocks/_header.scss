@@ -7,9 +7,6 @@
             display: flex;
             justify-content: start;
             align-items: center;
-            &--logo {
-                
-            }
             &--divider {
                 display: block;
                 margin-top: 20px;
@@ -21,10 +18,10 @@
             &--text {
                 display: block;
                 margin-top: 20px;
-                width: 190px;
+                width: 110px;
 
                 font-family: 'OpenSans', sans-serif;
-                font-size: 14;
+                font-size: 14px;
                 font-weight: 400;
                 line-height: 18px;
                 color: $main-color;
