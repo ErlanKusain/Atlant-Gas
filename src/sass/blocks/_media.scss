@@ -19,19 +19,44 @@
             }
         }
     }
+    .advantages {
+        &__items {
+            grid-template-columns: repeat(3, 290px);
+
+        }
+        &__item {
+            &--title {
+                font-size: 21px;
+            }
+            .descr {
+                font-size: 15px;
+            }
+        }
+        &__warranty {
+                grid-template-columns: 500px 390px;
+                &--title {
+                    font-size: 26px;
+                    margin-bottom: 30px;
+                }
+                &--span {
+                    font-size: 16px;
+                    padding: 8px 5px 8px 8px;
+                }
+        }
+    }
 }
 
 @media(max-width: 992px) {
     .container {
         max-width: 720px;
     }
-    .header {
-        &__block {
-            &--text {
+    // .header {
+    //     &__block {
+    //         &--text {
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
     .promo {
         &__descr {
             &--text {
@@ -84,6 +109,28 @@
     .title {
         font-size: 34px;
     }
+    .advantages {
+        &__items {
+            grid-template-columns: repeat(3, 242px);
+            column-gap: 10px;
+        }
+        &__item {
+            &--title {
+                font-size: 18px;
+
+            }
+            .descr {
+                font-size: 13px;
+            }
+        }
+        &__warranty {
+            display: block;
+            &--descr {
+                width: 390px;
+                transform: translate(320px, -250px);
+            }
+        }
+    }
 }
 
 @media(max-width: 768px) {
@@ -132,6 +179,25 @@
         }
         .title {
             font-size: 32px;
+        }
+    }
+    .advantages {
+        margin-top: 100px;
+        &__items {
+            grid-template-columns: repeat(2, 255px);
+            row-gap: 25px;
+        }
+        &__warranty {
+            &--descr {
+                width: 390px;
+                transform: translate(50px, -235px);
+            }
+            &--img {
+                width: 500px;
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -230,6 +296,42 @@
         }
         .title {
             font-size: 28px;
+            line-height: 35px;
+        }
+    }
+    .advantages {
+        &__title {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        &__items {
+            grid-template-columns: repeat(1, 255px);
+            row-gap: 30px;
+        }
+        &__item {
+            &--title {
+                font-size: 22px;
+            }
+            .descr {
+                font-size: 15px;
+            }
+        }
+        &__warranty {
+            margin-top: 300px;
+            &--title {
+                font-size: 20px;
+            }
+            &--span {
+                font-size: 12px;
+            }
+            &--descr {
+                width: 300px;
+            }
+            &--img {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 }
