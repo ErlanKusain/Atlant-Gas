@@ -5,7 +5,15 @@ $(document).ready(function(){
         dots: true,
         adaptiveHeight:true,
         prevArrow: '<button type="button" class="slick-prev"><img src= "../img/icons/slider-arrow-left.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src= "../img/icons/slider-arrow-right.svg"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src= "../img/icons/slider-arrow-right.svg"></button>',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+            }
+          },
+        ]
       });
 
     $('ul.volume__tabs').on('click', 'li:not(.volume__tab_active)', function() {

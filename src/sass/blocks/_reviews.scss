@@ -94,6 +94,7 @@
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 5;
     }
     .slick-next {
         position: absolute;
@@ -107,5 +108,9 @@
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 5;
+    }
+    &__slider-mini {
+        display: none;
     }
 }
